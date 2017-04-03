@@ -913,6 +913,8 @@ elif 'g95' in env['FORTRAN']:
     env['FORTRANMODDIRPREFIX'] = '-fmod='
 elif 'ifort' in env['FORTRAN']:
     env['FORTRANMODDIRPREFIX'] = '-module '
+elif 'roseCompiler' in env['FORTRAN']:
+    env['FORTRANMODDIRPREFIX'] = '-J'
 
 env['F77'] = env['F90'] = env['F95'] = env['F03'] = env['FORTRAN']
 env['F77FLAGS'] = env['F90FLAGS'] = env['F95FLAGS'] = env['F03FLAGS'] = env['FORTRANFLAGS']

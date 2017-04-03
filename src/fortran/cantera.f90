@@ -407,9 +407,9 @@ MODULE CANTERA
      MODULE PROCEDURE ctrans_viscosity
   END INTERFACE viscosity
 
-  INTERFACE write
+  INTERFACE writeA
      MODULE PROCEDURE ctxml_write
-  END INTERFACE write
+  END INTERFACE writeA
 
 END MODULE CANTERA
 
